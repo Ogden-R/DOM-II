@@ -131,7 +131,8 @@ bgChange.addEventListener("keyup", event => {
 bgChange.addEventListener('keyup', event => {
     console.log('stopping propagation!');
     event.stopPropagation();
-})
+});
+
 
 // 7. Wheel
 funBusHeading.addEventListener("wheel", (event) =>
@@ -140,7 +141,7 @@ funBusHeading.addEventListener("wheel", (event) =>
 });
 
 
-
-
-
-
+// 8. Load
+window.addEventListener('load', (event) => {
+    alert('Page has loaded properly');
+});
